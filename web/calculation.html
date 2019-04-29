@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Budget Planner</title>
+    <link href="web/css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="web/script/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="bg-container">
+        <h1>Ahle's Budget Planner</h1>
+        <h3>This planner uses a 60/30/10% division of your wadge.</h3>
+
+        <form action="/calculation" method="POST">
+            After Tax I earned: $
+            <input type="text" name="after-tax">
+            <br>
+
+            <br>
+            <div class="container">
+                My static expenses like phone plan, rent, car repayment are;
+                <div id="static" class="inner-wrap">
+                    <br> Name:
+                    <input type="text" name="static-name"> Cost: $
+                    <input type="text" name="static-cost">
+                </div>
+                <button class="add-btn" name="add" onClick="AddRow('static');" type="button">Add row</button>
+
+                <br>
+
+                <br> My variable expenses like food, fuel and entertainment.
+                <br>
+                <div id="variable" class="inner-wrap">
+                    Name:
+                    <input type="text" name="variable-name"> Cost: $
+                    <input type="text" name="variable-cost">
+
+                </div>
+                <button class="add-btn" name="add" onClick="AddRow('variable');" type="button">Add row</button>
+                <br>
+                <br> My goals like saving money and paying off debt.
+                <br>
+                <div id="goal" class="inner-wrap">
+                    Name:
+                    <input type="text" name="goal-name"> Cost: $
+                    <input type="text" name="goal-cost">
+
+                </div>
+                <button class="add-btn" name="add" onClick="AddRow('goal');" type="button">Add row</button>
+            </div>
+            <br>
+            <p> you have ${{.Remaining}} left over</p>
+            <input type="submit" value="Am I Broke?">
+        </form>
+    </div>
+</body>
+
+
+</html>

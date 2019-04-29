@@ -1,0 +1,40 @@
+html{
+    padding: none;
+    margin: none;
+    border: none;
+}
+
+body{
+    background-color: antiquewhite
+    
+}
+.inner-wrap{
+   outline: 1px solid black;
+   background-color: rgba(255, 228, 196, 0.493);
+   
+}
+
+input{
+    background-color: rgb(236, 255, 253);
+    border: none;
+
+}
+
+.add-btn {
+    float: right;
+    background-color: rgb(47, 75, 47);
+    color:aliceblue;
+    border: 1px aliceblue solid;
+}
+
+.container{
+    width: 600px;
+}
+
+.bg-container{
+    padding-top: 20px;
+    background-image: url("../images/paper-background.jpeg");
+    background-repeat: repeat-y;
+    background-size: 600px;
+    
+}
